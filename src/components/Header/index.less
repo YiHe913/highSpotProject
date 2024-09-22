@@ -1,0 +1,66 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  height: 64px;
+  max-height: 64px;
+  min-width: 430px;
+  background: #66667e;
+  &-banner{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    justify-content: center;
+    padding: 0 18px;
+    &-left{
+      flex: 1;
+      & > a {
+        color: #fff;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: 64px;
+        margin: 0;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+    &-center{
+      flex: 3;
+      border-radius: 6px;
+      max-width: 600px;
+      min-width: 100px;
+      margin: 0 16px;
+      min-height: 36px;
+      background-color: #fff;
+      :global{
+        .ant-input-group-addon{
+          color:#202020;
+        }
+        .ant-input-affix-wrapper{
+          min-height: 36px;
+        }
+        .ant-input-group{
+          min-height: 36px;
+        }
+      }
+    }
+    &-right{
+      display: flex;
+      flex: 1;
+      justify-content: end;
+      margin: 14px 0;
+      :global{
+        .ant-btn-primary{
+          background:#00000029;
+          font-weight: bolder;
+          margin-right: 16px;
+        }
+        :where(.css-dev-only-do-not-override-qnu6hi).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+          background:#0000003d;
+        }
+      }
+    }
+  }
+}
